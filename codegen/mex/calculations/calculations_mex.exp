@@ -1,0 +1,7 @@
+calculations_mex.mexw64
+calculations		calculations
+calculations_atexit		calculations_atexit
+calculations_initialize		calculations_initialize
+calculations_terminate		calculations_terminate
+emlrtMexFcnProperties		emlrtMexFcnProperties
+mexFunction		mexFunction

@@ -1,0 +1,8 @@
+LIBRARY calculations_mex.mexw64
+EXPORTS
+mexFunction
+emlrtMexFcnProperties
+calculations
+calculations_initialize
+calculations_terminate
+calculations_atexit
