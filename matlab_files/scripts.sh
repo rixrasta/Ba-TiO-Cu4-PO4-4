@@ -2,7 +2,7 @@
 #SBATCH -J separate
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=2
-#SBATCH -t 00:01:10
+#SBATCH -t 00:50:00
 #SBATCH -p testing
 
 module purge
