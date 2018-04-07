@@ -1,0 +1,29 @@
+function SN=iterate_over_rotations(a00,b00,g00)
+    %%gives the toplist of errors on all angles
+    len_a=length(a00); len_b=length(b00);len_g=length(g00);
+    SNX = [[-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];
+            [-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];
+            [-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];
+            [-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];
+            [-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1];[-1,-1,-1,-1]];
+    for a=1:len_a
+        for b=1:len_b
+            for g=1:len_g
+                Sa=diff(calculations(a00(a),b00(b),g00(g),B1),'a')
+                Sb=diff(calculations(a00(a),b00(b),g00(g),B1),'a')
+                Sa=diff(calculations(a00(a),b00(b),g00(g),B1),'a')
+                Sa=diff(calculations(a00(a),b00(b),g00(g),B1),'a')
+                Sb=iteration(a00(a),b00(b),g00(g),'b',false);
+                Sc=iteration(a00(a),b00(b),g00(g),'c',false);
+                Sab=iteration(a00(a),b00(b),g00(g),'ab',false);
+                SNX=toplist([avg([Sa Sb Sc Sab]),a00(a),b00(b),g00(g)],SNX);
+            end
+            
+            %b00(b)
+        end
+        %[max([Sa Sb Sc Sab]),a00(a),b00(b),g00(g)]
+        %a00(a)
+    end
+    [~,i] = min(abs(SNX(:,1)));
+    SN=SNX(i,:);
+end
