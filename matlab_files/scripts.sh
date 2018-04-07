@@ -6,5 +6,5 @@
 #SBATCH -p testing
 
 module purge
-module load Octave-4.2.2
+module load octave-4.2.2
 matlab -nodisplay < gonio12_optimum.m
