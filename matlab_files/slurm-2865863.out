@@ -1,0 +1,5 @@
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+warning: function ./test.m shadows a core library function
+ans =  15.939
+error: matrix cannot be indexed with .
