@@ -1,0 +1,3 @@
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+warning: function name 'gonio12_optimum' does not agree with function filename ''

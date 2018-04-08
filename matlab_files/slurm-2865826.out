@@ -1,0 +1,1 @@
+/var/spool/slurm/slurmd/job2865826/slurm_script: line 10: 45638 Segmentation fault      octave --no-window-system --jit-compiler < gonio12_optimum.m
