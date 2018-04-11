@@ -15,7 +15,7 @@ for i in range(40):
     f.write("\n")
     f.write("module purge \n")
     f.write("module load octave-4.2.2 \n")
-    f.write("octave --no-gui octave.m "+str(20-i)+" "+str(19-i)+" 10 9 27 26")
+    f.write("octave --no-gui arguments.m "+str(20-i)+" "+str(19-i)+" 10 9 27 26")
     f.close() 
 
     os.system("sbatch script"+str(i+1)+".sh")
